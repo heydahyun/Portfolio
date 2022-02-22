@@ -1,0 +1,265 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --padding: 1.5rem;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: #777;
+  --color-light: #efefef;
+  --color-text: var(--color-black);
+  --color-text-grey: var(--color-grey);
+  --color-background: var(--color-white);
+  --color-code-light-grey: #cacbd1;
+  --color-code-comment: #a9aaad;
+  --color-code-white: #c5c9c6;
+  --color-code-red: #d16464;
+  --color-code-orange: #de935f;
+  --color-code-yellow: #f0c674;
+  --color-code-green: #a7bd68;
+  --color-code-aqua: #8abeb7;
+  --color-code-blue: #7e9abf;
+  --color-code-purple: #b294bb;
+  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  padding: var(--padding);
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: 0;
+  color: currentColor;
+  cursor: pointer;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+small {
+  font-size: inherit;
+  color: var(--color-text-grey);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.color-grey {
+  color: var(--color-text-grey);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  margin-bottom: 6rem;
+}
+
+.main{
+  flex-grow: 1;
+  margin-bottom:3rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 3rem;
+}
+
+.projects img{
+  width:100%;
+  margin-bottom: .5rem;
+}
+
+.logo {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu {
+  display:inline-flex;
+  flex-wrap: wrap;
+  flex: 0; 
+}
+
+.menu a {
+  padding: 0.5rem;
+  display: block;
+  
+}
+
+.menu a[aria-current] {
+  text-decoration: underline;
+}
+
+
+
+.footer {
+    padding: 9rem 0 6rem;
+    line-height: 1.5em;
+  }
+  .footer:before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--color-black);
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer h2 {
+    font-weight: 600;
+    margin-bottom: .75rem;
+  }
+  .footer ul,
+  .footer p {
+    color: var(--color-text-grey);
+  }
+  .footer p {
+    max-width: 15rem;
+  }
+  .footer a:hover {
+    color: var(--color-text);
+  }
+
+
+ */
+
+  /**
+This is the basic css file I'm using for the examples
+in the basics series. I will extend this file whenever
+a new tutorial is being added and new css rules will 
+follow. 
+*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a {
+  color: currentColor;
+}
+
+body {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li + li {
+  margin-left: 1.5rem;
+}
+
+.main {
+  flex-grow: 1;
+  margin-bottom: 3rem;
+}
+
+.main h1 {
+  margin-bottom: 1.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 3rem;
+}
+.projects img {
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.pagination span {
+  color: #999;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.filter a {
+  padding: .5rem 1rem;
+  background: #000;
+  color: #fff;
+  margin-right: .5rem;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.filter a[aria-current] {
+  background: blue;
+}
